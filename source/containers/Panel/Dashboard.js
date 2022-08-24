@@ -4,7 +4,7 @@
 
 import React from "react";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../../../source/constants/variables';
+import * as Variable from '../../constants/FixVariables';
 import Image from 'next/image'
 import {GrTransaction} from "react-icons/gr";
 
@@ -41,6 +41,7 @@ function Dashboard() {
       box-shadow: ${Variable.boxShadow};
       border: ${Variable.border};
       padding: 1em;
+      margin-bottom: 10px;
       @media (max-width: 992px) {
         width: 48%;
       }

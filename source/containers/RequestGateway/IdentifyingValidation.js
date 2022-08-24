@@ -1,4 +1,4 @@
-import validator from "validator/es";
+import validator from "validator";
 
 
 

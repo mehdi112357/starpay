@@ -5,14 +5,10 @@
 import React from "react";
 import Link from "next/link"
 import {jsx, css, keyframes} from '@emotion/react';
-import * as Variable from '../source/constants/variables';
+import * as Variable from '../source/constants/FixVariables';
 import PageTitle from "../source/containers/PageTitle";
 import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
-import VideoHomePage from "../source/containers/HomePage/VideoHomePage";
-import Services from "../source/containers/HomePage/Services/Services";
-import Slogan from "../source/containers/Slogan";
-import Features from "../source/containers/HomePage/Features/Features";
-import {navFontColor} from "../source/constants/variables";
+
 import FlipCard from "../source/containers/FlipCard";
 
 
@@ -55,7 +51,7 @@ const picAndContext = css`
 const popularContainer = css`
   margin-bottom: 50px;
 
-  > :nth-child(1) {
+  > :nth-of-type(div) {
     margin: 50px auto;
   }
 `
@@ -65,7 +61,7 @@ const popularServices = css`
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 90%;
-  margin: auto;
+  margin:20px auto;
 `
 
 

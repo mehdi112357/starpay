@@ -3,7 +3,7 @@
 /** @jsxImportSource @emotion/react */
 import React, {useState} from "react";
 import {jsx, css} from '@emotion/react'
-import * as Variable from '../../Constants/Variables';
+import * as Variable from '../../constants/FixVariables';
 import FormInput from "../../component/inputs/FormInput";
 import FormButton from "../../component/buttons/FormButton";
 import uploadLogo from "../../../public/img/Image upload-logo.svg"

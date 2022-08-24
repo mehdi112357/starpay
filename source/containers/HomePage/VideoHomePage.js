@@ -39,9 +39,9 @@ const videoClass = css`
   object-fit: cover;
   filter: blur(3px) brightness(30%);
   overflow: hidden;
-  height: 80vh;
+  height: 86vh;
   @media (max-width: 768px) {
-    height: 88vh;
+    height: 91vh; 
   }
 `
 const textVideoClass = css`

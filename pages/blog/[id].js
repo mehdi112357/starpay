@@ -5,7 +5,7 @@
 import React from "react";
 import {useRouter} from "next/router";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../../source/constants/variables';
+import * as Variable from '../../source/constants/FixVariables';
 import HeaderAndFooter from "../../source/hoc/HeaderAndFooter";
 import PageTitle from "../../source/containers/PageTitle";
 import Link from "next/link";

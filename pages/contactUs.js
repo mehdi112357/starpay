@@ -11,11 +11,10 @@ import FormTitle from "../source/containers/ContactUs/FormTitle";
 import ContactForm from "../source/containers/ContactUs/ContactForm";
 import Address from "../source/containers/ContactUs/Address";
 import ContactManagers from "../source/containers/ContactUs/ContactManagers";
-
+import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
 import {AiOutlineMail} from "react-icons/ai"
 import {BsBuilding} from "react-icons/bs"
 import {MdOutlineSupportAgent, MdRecordVoiceOver} from "react-icons/md"
-import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
 
 
 const contactUsCSS = css`
@@ -37,19 +36,13 @@ const callSectionCSS = css`
     flex-direction: column;
   }
 
-  > :nth-child(1) {
-    width: 55%;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-
-  > :nth-child(2) {
+  > * {
     width: 50%;
     @media (max-width: 768px) {
       width: 100%;
     }
   }
+  
 
   > * {
     @media (max-width: 600px) {

@@ -1,4 +1,4 @@
-import validator from "validator/es";
+import validator from "validator";
 
 const ContactFormValidation = (contactUsInfo) => {
 
@@ -13,7 +13,7 @@ const ContactFormValidation = (contactUsInfo) => {
         if (contactUsInfo.phone === "" || contactUsInfo.phone === undefined) {
             errors['phone'] = 'لطفا شماره تماس خود را وارد فرمایید.';
             reject(errors);
-        }else if (!validator.isMobilePhone(contactUsInfo.phone,'fa-IR')) {
+        } else if (!validator.isMobilePhone(contactUsInfo.phone, 'fa-IR')) {
             errors['phone'] = 'شماره موبایل نا معتبر است.';
             reject(errors);
         }

@@ -6,19 +6,19 @@ import React from "react";
 import {jsx, css} from '@emotion/react';
 
 
-function CashOut() {
+function Users() {
 
-    const cashOut = css`
+    const wallet = css`
     `
     return (
 
         <React.Fragment>
-            <main css={cashOut}>
-                CashOut
+            <main css={wallet}>
 
+                Users
             </main>
         </React.Fragment>
     );
 }
 
-export default CashOut;
+export default Users;

@@ -3,7 +3,7 @@
 /** @jsxImportSource @emotion/react */
 import React, {useEffect} from "react";
 import {jsx, css, Global} from '@emotion/react'
-import * as Variable from '../source/constants/variables';
+import * as Variable from '../source/constants/FixVariables';
 import VideoHomePage from "../source/containers/HomePage/VideoHomePage";
 import Services from "../source/containers/HomePage/Services/Services"
 import Slogan from "../source/containers/Slogan"

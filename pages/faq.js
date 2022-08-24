@@ -4,7 +4,7 @@
 
 import React from "react";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../source/constants/variables';
+import * as Variable from '../source/constants/FixVariables';
 import PageTitle from "../source/containers/PageTitle";
 import {styled} from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';

@@ -22,7 +22,7 @@ function Loading() {
      
         >img{
           height: auto;
-          width: 100%;
+          width: 50%;
         }
       }
     `

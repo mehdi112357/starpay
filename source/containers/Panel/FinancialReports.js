@@ -6,19 +6,19 @@ import React from "react";
 import {jsx, css} from '@emotion/react';
 
 
-function Developers() {
+function FinancialReports() {
 
-    const developers = css`
+    const cashOut = css`
     `
     return (
 
         <React.Fragment>
-            <main css={developers}>
-                Developers
+            <main css={cashOut}>
+                FinancialReports
 
             </main>
         </React.Fragment>
     );
 }
 
-export default Developers;
+export default FinancialReports;

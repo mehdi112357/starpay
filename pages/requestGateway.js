@@ -4,17 +4,15 @@
 
 import React, {useEffect, useState} from "react";
 import {jsx, css} from '@emotion/react'
-
-import Identifying from "../source/containers/RequestGateway/Identifying";
-import UploadDoc from "../source/containers/RequestGateway/UploadDoc";
-import ShopDoc from "../source/containers/RequestGateway/ShopDoc";
-
+import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import Identifying from "../source/containers/RequestGateway/Identifying";
+import UploadDoc from "../source/containers/RequestGateway/UploadDoc";
+import ShopDoc from "../source/containers/RequestGateway/ShopDoc";
 import StepLabel from '@mui/material/StepLabel';
-import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
 
 
 
@@ -49,14 +47,13 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 function RequestGateway() {
-
     const [activeStep, setActiveStep] = useState(0);
 
-        // useEffect(() => {
-        //     if (typeof window !== "undefined") {
-        //         window.scrollTo(0, 0)
-        //     }
-        // }, [])
+    // useEffect(() => {
+    //         if (typeof window !== "undefined") {
+    //             window.scrollTo(0, 0)
+    //         }
+    //     }, [])
 
     const [open, setOpen] = useState(false);
 

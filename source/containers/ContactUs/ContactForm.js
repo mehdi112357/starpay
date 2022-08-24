@@ -4,7 +4,7 @@
 
 import React, {useState} from "react";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../../constants/variables';
+import * as Variable from '../../constants/FixVariables';
 import FormInput from "../../component/inputs/FormInput";
 import TextareaForm from "../../component/inputs/TextareaForm";
 import FormButton from "../../component/buttons/FormButton";

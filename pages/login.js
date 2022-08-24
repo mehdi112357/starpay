@@ -4,7 +4,7 @@
 
 import React, {useState} from "react";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../source/constants/variables';
+import * as Variable from '../source/constants/FixVariables';
 import validator from "validator/";
 import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
 import PageTitle from "../source/containers/PageTitle";

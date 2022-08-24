@@ -6,19 +6,19 @@ import React from "react";
 import {jsx, css} from '@emotion/react';
 
 
-function Wallet() {
+function Security() {
 
-    const wallet = css`
+    const developers = css`
     `
     return (
 
         <React.Fragment>
-            <main css={wallet}>
+            <main css={developers}>
+                Security
 
-                Wallet
             </main>
         </React.Fragment>
     );
 }
 
-export default Wallet;
+export default Security;

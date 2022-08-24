@@ -5,7 +5,7 @@
 import {jsx, css, Global} from '@emotion/react';
 import React, {useEffect, useState} from "react";
 import { useRouter } from 'next/router';
-import * as Variable from "../source/constants/variables";
+import * as Variable from "../source/constants/FixVariables";
 import Loading from "../source/containers/Loading";
 
 

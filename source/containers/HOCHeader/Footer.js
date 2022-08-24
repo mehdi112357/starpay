@@ -5,9 +5,9 @@
 import React from "react";
 import Link from "next/link";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../../constants/variables'
+import * as Variable from '../../constants/FixVariables'
 import {BsWhatsapp, BsInstagram} from 'react-icons/bs';
-import {AiOutlineMail} from 'react-icons/ai';
+import {SiMaildotru} from 'react-icons/si';
 import {TbPhoneCall} from 'react-icons/tb';
 import {MdLocationOn} from 'react-icons/md';
 import {SiAparat} from 'react-icons/si';
@@ -44,9 +44,11 @@ const footerLogoCSS = css`
     font-weight: bold;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0;
+
     div {
       margin-right: 0;
     }
@@ -81,7 +83,7 @@ const rightSideCallUs = css`
     span {
       color: #919191;
       margin-right: .5rem;
-      font-size: .8em;
+      font-size: .7em;
       @media (max-width: 992px) {
         width: 70%;
         white-space: nowrap;
@@ -116,7 +118,7 @@ const divider = css`
 const leftSideCallUs = css`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 30%;
   @media (max-width: 768px) {
@@ -202,17 +204,17 @@ function Footer() {
                     <div css={rightSideCallUs}>
                         <a href={"tel:+989199001193"}>
                             <TbPhoneCall/>
-                            <span>09121112525</span>
+                            <span>93 11 900 0919</span>
                         </a>
                         <span css={divider}/>
-                        <a target={"_blank"}
+                        <a target={"blank"}
                            href={"https://www.google.com/maps/place/%D8%B3%D8%AA%D8%A7%D8%B1%D9%87+%DB%8C%DA%A9%E2%80%AD/@35.7797165,51.3743237,19z/data=!4m5!3m4!1s0x3f8e077df52d20bb:0xb41d4b97fc84bc2c!8m2!3d35.7796364!4d51.3750377"}>
                             <MdLocationOn/>
                             <span>سعادت آباد، خیابان کیان ۱۳ شرقی، پلاک ۲</span>
                         </a>
                     </div>
                     <div css={leftSideCallUs}>
-                        <a href={"mailto:r.kameli@setareaval.ir"}> <AiOutlineMail/> </a>
+                        <a href={"mailto:r.kameli@setareaval.ir"}> <SiMaildotru/> </a>
                         <a href="#"> <BsWhatsapp/> </a>
                         <a href="#"> <BsInstagram/> </a>
                         <a href="#"> <SiAparat/> </a>

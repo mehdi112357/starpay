@@ -4,7 +4,7 @@
 
 import React from "react";
 import {jsx, css} from '@emotion/react';
-import * as Variable from '../../constants/variables';
+import * as Variable from '../../constants/FixVariables';
 import DatePicker from "react-datepicker2";
 import moment from "moment-jalaali"
 

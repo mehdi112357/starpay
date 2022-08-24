@@ -3,7 +3,7 @@
 /** @jsxImportSource @emotion/react */
 
 import React, {useState} from "react";
-import * as Variable from '../../Constants/Variables';
+import * as Variable from '../../constants/FixVariables';
 import {jsx, css, keyframes} from '@emotion/react';
 import LinkMenu from "../../component/links/LinkMenu";
 import NavIcon from "../../component/buttons/NavIcon";
@@ -28,10 +28,10 @@ const logoAnimation = keyframes`
 `
 const iconAnimation = keyframes`
   0% {
-    transform: translateX(-200px) rotate(-360deg);
+    transform: translateX(-200px) ;
   }
   100% {
-    transform: translateX(0) rotate(0);
+    transform: translateX(0);
   }
 `
 const hamburger = keyframes`
@@ -157,7 +157,7 @@ const actionBtnClass = css`
   > :nth-child(2) {
     > * {
       transform: translateX(-200px);
-      animation: ${iconAnimation} 1s ease-out;
+      animation: ${iconAnimation} .25s ease-out;
       animation-fill-mode: forwards;
     }
 
@@ -165,11 +165,11 @@ const actionBtnClass = css`
     }
 
     > :nth-child(2) {
-      animation-delay: .25s;
+      animation-delay: .1s;
     }
 
     > :nth-child(3) {
-      animation-delay: .5s;
+      animation-delay: .2s;
     }
   }
 `

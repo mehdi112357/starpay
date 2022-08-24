@@ -5,6 +5,7 @@
 import React from "react";
 import {jsx, css} from '@emotion/react';
 import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
+import Image from 'next/image'
 
 
 function NotFound() {
@@ -15,27 +16,40 @@ function NotFound() {
       margin: auto;
       position: relative;
 
-      > img {
-        height: calc(100vh - 90px);
-      }
 
-      h1 {
+      h2 {
         position: absolute;
-        top: 10px;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        z-index: 1000;
+        @media (max-width: 768px) {
+          top: 95%;
+
+          font-size: 20px;
+        }
       }
     `
+
     return (
 
-     <React.Fragment>
-         <header>
-             <title>404</title>
-         </header>
-         <HeaderAndFooter content={ <section css={notFoundCss}>
-             <h1>این صفحه موجود نمی باشد</h1>
-             <img src={"./img/404 error.svg"} alt="این صفحه وجود ندارد"/>
-         </section>}/>
+        <React.Fragment>
+            <header>
+                <title>404</title>
+            </header>
+            <HeaderAndFooter content={
+                <section css={notFoundCss}>
+                    <h2>این صفحه موجود نمی باشد</h2>
+                    <Image src={"/img/404 error.svg"}
+                           alt="این صفحه وجود ندارد"
+                           width={800}
+                           height={800}
+                    />
+                </section>
+            }/>
 
-     </React.Fragment>
+        </React.Fragment>
     );
 }
 

@@ -3,7 +3,7 @@
 /** @jsxImportSource @emotion/react */
 
 import React from "react";
-import * as Variable from '../../../Constants/Variables';
+import * as Variable from '../../../constants/FixVariables';
 import {jsx, css} from '@emotion/react';
 import Link from "next/link"
 import {BsArrowRight} from "react-icons/bs"

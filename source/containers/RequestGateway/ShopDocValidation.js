@@ -1,4 +1,4 @@
-import validator from "validator/es";
+import validator from "validator";
 
 const ShopDocValidation = (shopInfo) => {
     const farsiCheckRegex = /^([\u0600-\u06FF]+\s?)+$/
