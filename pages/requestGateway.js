@@ -2,7 +2,7 @@
  /** @jsx jsx */
 /** @jsxImportSource @emotion/react */
 
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {jsx, css} from '@emotion/react'
 import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
 import Stepper from '@mui/material/Stepper';
@@ -49,11 +49,6 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 function RequestGateway() {
     const [activeStep, setActiveStep] = useState(0);
 
-    // useEffect(() => {
-    //         if (typeof window !== "undefined") {
-    //             window.scrollTo(0, 0)
-    //         }
-    //     }, [])
 
     const [open, setOpen] = useState(false);
 

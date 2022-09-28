@@ -3,8 +3,6 @@
 /** @jsxImportSource @emotion/react */
 import React, {useState} from "react";
 import {jsx, css} from '@emotion/react'
-import uploadPic1 from "../../../public/img/Imageupload1.svg"
-import uploadPic2 from "../../../public/img/Imageupload2.svg"
 import FormButton from "../../component/buttons/FormButton";
 import UploadDocValidation from "./UploadDocValidation";
 import FileInput from "../../component/inputs/FileInput";
@@ -60,12 +58,12 @@ function UploadDoc({handleNext}) {
             <form onSubmit={formUploadHandler} css={formUpload} action="" method="">
                 <div css={uploadContainer}>
                     <FileInput title={"تصویر روی کارت ملی"} inputOnchange={inputOnchange} property={"nationalCard"}
-                               image={"/img/Imageupload1.svg"}
+                               photo={"/img/Imageupload1.svg"}
                                altImage={"nationalCard"}
                                error={error.nationalCard}/>
                     <FileInput title={"تصویر صفحه اول شناسنامه"} inputOnchange={inputOnchange}
                                property={"birthCertificate"}
-                               image={"/img/Imageupload2.svg"}
+                               photo={"/img/Imageupload2.svg"}
                                altImage={"birthCertificate"}
                                error={error.birthCertificate}/>
                 </div>

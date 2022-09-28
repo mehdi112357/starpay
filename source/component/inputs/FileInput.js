@@ -70,7 +70,7 @@ const errorText = css`
 `
 
 
-function FileInput({title, inputOnchange, property, image, altImage, error}) {
+function FileInput({title, inputOnchange, property, photo, altImage, error}) {
     return (
         <div css={uploadBox(error)}>
             <span>{title}</span>
@@ -81,7 +81,7 @@ function FileInput({title, inputOnchange, property, image, altImage, error}) {
                 />
                 <div css={contentInput}>
                     <span>عکس با کیفیت مناسب بارگذاری فرمایید.</span>
-                    <img src={image} alt={altImage}/>
+                    <img src={photo} alt={altImage}/>
                     {(error === "" || undefined) ? null : <span css={errorText}>{error}</span>}
                 </div>
             </label>

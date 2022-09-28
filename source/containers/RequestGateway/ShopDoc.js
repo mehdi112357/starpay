@@ -169,7 +169,7 @@ function ShopDoc({handleNext}) {
             </section>
             <section>
                 <PageHint title={"بارگذاری لوگوی فروشگاه"} description={"لطفا از فرمت های JPG و PNG استفاده فرمایید."}/>
-                <FileInput inputOnchange={inputOnchange} property={"uploadLogo"} image={uploadLogo} altImage={"logo"}
+                <FileInput inputOnchange={inputOnchange} property={"uploadLogo"} photo={uploadLogo} altImage={"logo"}
                            error={error.uploadLogo}/>
             </section>
             <section css={accountInfo}>
