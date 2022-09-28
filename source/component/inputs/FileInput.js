@@ -57,14 +57,7 @@ const contentInput = css`
     text-align: center;
     font-size: .6rem;
   }
-
-  //> img {
-  //  width: 100%;
-  //  height: 200px;
-  //  @media (max-width: 768px) {
-  //  
-  //  }
-  //}
+  
 `
 const errorText=css`
   color: ${Variable.fontColorError};
@@ -83,7 +76,6 @@ function FileInput({title, inputOnchange, property, image, altImage, error}) {
                 <div css={contentInput}>
                     <span>عکس با کیفیت مناسب بارگذاری فرمایید.</span>
                     <img src={image} alt={altImage} width='100%' height='200px'/>
-                    {/*<Image src={image} alt={altImage} width='200px' height='200px'/>*/}
                     {(error === "" || undefined) ? null : <span css={errorText}>{error}</span>}
                 </div>
             </label>
