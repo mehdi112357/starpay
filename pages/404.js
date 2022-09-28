@@ -5,7 +5,6 @@
 import React from "react";
 import {jsx, css} from '@emotion/react';
 import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
-import Image from 'next/image'
 
 
 function NotFound() {
@@ -30,6 +29,10 @@ function NotFound() {
           font-size: 20px;
         }
       }
+      img{
+        width: 800px;
+        height: 800px;
+      }
     `
 
     return (
@@ -41,10 +44,8 @@ function NotFound() {
             <HeaderAndFooter content={
                 <section css={notFoundCss}>
                     <h2>این صفحه موجود نمی باشد</h2>
-                    <Image src={"/img/404 error.svg"}
+                    <img src={"/img/404 error.svg"}
                            alt="این صفحه وجود ندارد"
-                           width={800}
-                           height={800}
                     />
                 </section>
             }/>

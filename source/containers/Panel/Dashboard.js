@@ -5,8 +5,6 @@
 import React from "react";
 import {jsx, css} from '@emotion/react';
 import * as Variable from '../../constants/FixVariables';
-import Image from 'next/image'
-import {GrTransaction} from "react-icons/gr";
 
 
 function Dashboard() {
@@ -26,7 +24,7 @@ function Dashboard() {
       align-items: center;
       margin-top: 1em;
       @media (max-width: 992px) {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
 
       }
     `
@@ -48,27 +46,30 @@ function Dashboard() {
       @media (max-width: 768px) {
         width: 100%;
         flex-direction: row;
-height: auto;
+        height: auto;
       }
+
       > div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
+
         @media (max-width: 1200px) {
           flex-direction: column;
-        
+
         }
         @media (max-width: 768px) {
-       
-          flex-direction: row;
 
+          flex-direction: row;
         }
 
         svg {
           font-size: 2em;
           color: ${Variable.navFontColor};
-
+        }
+        img {
+          width: 75px;
+          height: 75px;
         }
       }
 
@@ -91,32 +92,28 @@ height: auto;
                     <div css={dashboardCardReports}>
                         <div>
                             <h6>تعداد تراکنش روز</h6>
-                            <Image src='/img/transactionCounts.png' alt='تعداد تراکنش روز' width='75px'
-                                   height='75px'/>
+                            <img src='/img/transactionCounts.png' alt='تعداد تراکنش روز' />
                         </div>
                         <h6>0</h6>
                     </div>
                     <div css={dashboardCardReports}>
                         <div>
                             <h6>مبلغ تراکنش روز</h6>
-                            <Image src='/img/amountTransaction.png' alt='مقدار تراکنش روز' width='75px'
-                                   height='75px'/>
+                            <img src='/img/amountTransaction.png' alt='مقدار تراکنش روز'/>
                         </div>
                         <h6>0 ریال</h6>
                     </div>
                     <div css={dashboardCardReports}>
                         <div>
                             <h6>موجودی کیف پول</h6>
-                            <Image src='/img/wallet.png' alt='مقدار تراکنش روز' width='75px'
-                                height='75px'/>
+                            <img src='/img/wallet.png' alt='مقدار تراکنش روز' />
                         </div>
                         <h6>0 ریال</h6>
                     </div>
                     <div css={dashboardCardReports}>
                         <div>
                             <h6>موجودی کیف پول</h6>
-                            <Image src='/img/wallet.png' alt='مقدار تراکنش روز' width='75px'
-                                   height='75px'/>
+                            <img src='/img/wallet.png' alt='مقدار تراکنش روز' />
                         </div>
                         <h6>0 ریال</h6>
                     </div>

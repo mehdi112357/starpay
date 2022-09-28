@@ -5,7 +5,6 @@
 import React from "react";
 import {jsx, css} from '@emotion/react';
 import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
-import Image from 'next/image'
 
 
 function NotFoundServer() {
@@ -32,6 +31,10 @@ padding-bottom: 50px ;
           width: 100%;
         }
       }
+      img {
+        width: 800px;
+        height: 800px;
+      }
     `
     return (
 
@@ -41,7 +44,7 @@ padding-bottom: 50px ;
             </header>
             <HeaderAndFooter content={ <section css={notFoundCss}>
                 <h4>سرور قادر به پاسخگویی نمیباشد لطفا مجدد تلاش فرمایید</h4>
-                <Image src={"/img/404 error.svg"} alt="این صفحه وجود ندارد" width={800} height={800}/>
+                <img src={"/img/404 error.svg"} alt="این صفحه وجود ندارد" />
             </section>}/>
 
         </React.Fragment>

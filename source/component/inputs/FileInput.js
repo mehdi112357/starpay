@@ -5,7 +5,6 @@
 import React from "react";
 import {jsx, css} from '@emotion/react';
 import * as Variable from '../../constants/FixVariables';
-import Image from 'next/Image'
 const uploadBox = (error) => css`
   display: flex;
   flex-direction: column;

@@ -5,23 +5,16 @@
 import React, {useState} from "react";
 import {jsx, css} from '@emotion/react';
 import * as Variable from '../source/constants/FixVariables';
-import HeaderAndFooter from "../source/hoc/HeaderAndFooter";
-import PageTitle from "../source/containers/PageTitle";
 import Footer from "../source/containers/HOCHeader/Footer";
 import Dashboard from '../source/containers/Panel/Dashboard'
-import {RiNotificationLine, RiLogoutBoxLine, RiWallet3Line} from "react-icons/ri";
+import {RiNotificationLine, RiLogoutBoxLine} from "react-icons/ri";
 import {GoDashboard} from "react-icons/go";
-import {TbUserCircle} from "react-icons/tb";
 import {MdOutlinePayment, MdOutlineSecurity} from "react-icons/md";
 import {BsCashCoin} from "react-icons/bs";
-import {BiCodeAlt, BiSupport} from "react-icons/bi";
+import {BiSupport} from "react-icons/bi";
 import {AiOutlineSetting} from "react-icons/ai";
 import {FiUsers} from "react-icons/fi";
-import Tooltip from '@mui/material/Tooltip';
-
-
 import Link from "next/link";
-import Image from "next/image";
 import Gateway from "../source/containers/Panel/Gateway";
 import Users from "../source/containers/Panel/Users";
 import FinancialReports from "../source/containers/Panel/FinancialReports";
@@ -29,7 +22,7 @@ import Security from "../source/containers/Panel/Security";
 import Support from "../source/containers/Panel/Support";
 import Settings from "../source/containers/Panel/Settings";
 import IconButton from "@mui/material/IconButton";
-import avatar from '../public/img/avatarPhoto.png'
+
 
 function Panel() {
     const [mainPage, setMainPage] = useState('dashboard')
@@ -64,8 +57,10 @@ function Panel() {
         }
       }
 
-      > img {
+      img {
         cursor: pointer;
+        width: 60px;
+        height: 60px;
       }
     `
     const mainPanel = css`
@@ -241,10 +236,7 @@ function Panel() {
             <div css={panel}>
                 <nav css={navPanel}>
                     <Link href="/">
-                        <a>
-                            <Image src={'/img/01 - SetareAval.png'} alt="Stereh Avval Logo"
-                                   width='60px' height="60px"/>
-                        </a>
+                            <img src={'/img/01 - SetareAval.png'} alt="Stereh Avval Logo"/>
                     </Link>
                     <div css={leftIconsNav}>
                         <div>
