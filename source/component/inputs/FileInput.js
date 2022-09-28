@@ -5,6 +5,7 @@
 import React from "react";
 import {jsx, css} from '@emotion/react';
 import * as Variable from '../../constants/FixVariables';
+
 const uploadBox = (error) => css`
   display: flex;
   flex-direction: column;
@@ -57,9 +58,14 @@ const contentInput = css`
     text-align: center;
     font-size: .6rem;
   }
-  
+
+  > img {
+    width: 100%;
+    height: 200px;
+  }
+
 `
-const errorText=css`
+const errorText = css`
   color: ${Variable.fontColorError};
 `
 
@@ -75,7 +81,7 @@ function FileInput({title, inputOnchange, property, image, altImage, error}) {
                 />
                 <div css={contentInput}>
                     <span>عکس با کیفیت مناسب بارگذاری فرمایید.</span>
-                    <img src={image} alt={altImage} width='100%' height='200px'/>
+                    <img src={image} alt={altImage}/>
                     {(error === "" || undefined) ? null : <span css={errorText}>{error}</span>}
                 </div>
             </label>
